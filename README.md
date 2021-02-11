@@ -72,6 +72,20 @@ Save the plan with file name solution.plan
 
 Once deployment is done, destroy the resources defined in the Terraform configuration
 
+## Variables
 
+#### Input variables 
+variables that are used in Terraform to plan, apply and destroy operations are saved in ***vars.tf*** file. The values of these variables are determined by user input.
+
+#### Assign values to your variables
+Terraform can populate variables using values from ***terraform.tfvars*** file
+
+## Output
+Screenshots are saved in this repo
+* tagging-policy definition, 
+* tagging-policy assignment, 
+* packer build,
+* terraform apply and 
+* terraform destroy
 
 
