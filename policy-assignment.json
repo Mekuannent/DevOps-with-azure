@@ -1,0 +1,24 @@
+{
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "policy-tagging",
+  "properties": {
+    "mode": "all",
+    "displayName": "Deny resources with no tags",
+    "desciption": "Deny the creation of resources that do not have tags",
+    "policyRule": {
+	   "if": {
+	      "allOf": [{
+              "field": "type",
+              "equals": "Microsoft.Compute/virtualMachines"
+             },
+             {
+              "field": "tags",
+              "exists": false
+             }]
+       },
+         "then": {
+    	    "effect": "deny"
+	      }
+    }
+  }
+}

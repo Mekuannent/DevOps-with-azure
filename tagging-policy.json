@@ -1,0 +1,15 @@
+{
+  "if": {
+	   "allOf": [{
+       "field": "type",
+       "equals": "Microsoft.Compute/virtualMachines"
+      },
+      {
+        "field": "tags",
+        "exists": false
+      }]
+    },
+      "then": {
+    	    "effect": "deny"
+	    }
+}
