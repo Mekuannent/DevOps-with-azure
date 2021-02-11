@@ -57,8 +57,20 @@ Our terraform template should create the following infastructure compontents
 9. Create managed disks for the VM
 10. Ensure variable file to allow customer to configure the number of VMs and deployment
 
-## Deploying the infrastructure
+## Deploying the VM image
 
+Use Packer to deploy your VM image in Azure CLI as shown below
+
+`packer build server.json`
+
+## Deploy the infrastructure
+
+Run Terraform command to deploy the infrastructure on the image just created. 
+Save the plan with file name solution.plan
+
+`terraform plan -out solution.plan`
+
+Once deployment is done, destroy the resources defined in the Terraform configuration
 
 
 
