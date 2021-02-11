@@ -1,4 +1,4 @@
 admin_username    = "adminuser"
-admin_password    = "P@ssw0rd1234!"
+admin_password    = "*********"
 
 vm-count          = 1
