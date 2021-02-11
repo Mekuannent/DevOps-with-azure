@@ -75,7 +75,7 @@ Once deployment is done, destroy the resources defined in the Terraform configur
 ## Variables
 
 #### Input variables 
-variables that are used in Terraform to plan, apply and destroy operations are saved in ***vars.tf*** file. The values of these variables are determined by user input.
+Variables that are used in Terraform to plan, apply and destroy operations are saved in ***vars.tf*** file. The values of these variables are determined by user input.
 
 #### Assign values to your variables
 Terraform can populate variables using values from ***terraform.tfvars*** file
